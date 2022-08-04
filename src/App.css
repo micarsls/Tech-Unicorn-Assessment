@@ -1,0 +1,277 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.custom-container {
+  margin: 0 5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: #f86338;
+}
+input[type="range"]::-moz-range-thumb {
+  background: #f86338;
+}
+input[type="range"]::-ms-thumb {
+  background: #f86338;
+}
+
+.form-control:focus {
+  border-color: #f86338;
+  box-shadow: 0 0 0 0.2rem rgba(248, 99, 56, 0.4);
+}
+
+.form-select:focus {
+  border-color: #f86338;
+  box-shadow: 0 0 0 0.2rem rgba(248, 99, 56, 0.4);
+}
+
+.cart-menu div {
+  margin-right: 10px;
+}
+
+.social-icons div {
+  margin-right: 10px;
+}
+
+.active-nav {
+  font-weight: bold;
+}
+
+.custom-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.custom-nav li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.custom-nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  height: 15rem;
+}
+
+.view-mode {
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.view-mode:hover {
+  background-color: #e2e2ea;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-products-cols {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.color-option {
+  background-color: "#e2e2ea";
+  width: "40px";
+  height: "40px";
+  border-radius: "50%";
+}
+
+.category-text {
+  color: #f86338;
+}
+.price-text {
+  color: #f86338;
+}
+
+.categories {
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  list-style: none;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.categories li:hover {
+  background-color: #e2e2ea;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f86338;
+  color: white;
+  padding: 4rem 0;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.footer-contact {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contact li {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.footer-contact li div {
+  margin-right: 4px;
+}
+.grid-colors {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.custom-pagination div {
+  padding: 5px 12px;
+}
+
+.promo {
+  padding: 5px;
+  font-size: 12px;
+}
+.promo h4 {
+  font-size: 18px;
+}
+
+.promo button {
+  padding: 5px 10px;
+}
+
+.header-contact {
+  font-size: 12px;
+}
+
+.social-icons {
+  padding: "30px";
+}
+
+@media (min-width: 576px) {
+  .grid-products-cols {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-recommended {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-colors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .promo {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .promo h4 {
+    font-size: 20px;
+  }
+  .header-contact {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-products-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-recommended {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-colors {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .promo {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .promo h4 {
+    font-size: 24px;
+  }
+  .header-contact {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-products-cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-recommended {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-colors {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .header-contact {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-colors {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1400px) {
+}
